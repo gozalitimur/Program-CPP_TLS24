@@ -76,7 +76,7 @@ void volumetabung(float radius, float height) {
 int main() {
     int choice;
     float radius, width, height, length, a, b, c;
-    bool running = true; // Variable to control the loop
+    bool running = true; // Variable buat kontrol loop
 
   while (running) {
     cout << "Kalkulator penghitung keliling, luas, dan volume dari bangun di bawah" << endl;
