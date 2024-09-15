@@ -76,6 +76,7 @@ void volumetabung(float radius, float height) {
 int main() {
     int choice;
     float radius, width, height, length, a, b, c;
+    bool running = true; // Variable to control the loop
 
     cout << "Kalkulator penghitung keliling, luas, dan volume dari bangun di bawah" << endl;
     cout << "1. Circle" << endl;
@@ -86,6 +87,7 @@ int main() {
     cout << "6. Sphere" << endl;
     cout << "7. Cuboid" << endl;
     cout << "8. Tube (Cylinder)" << endl;
+    cout << "9. exit" << endl; 
     cout << "Masukan nomor bangun yang akan dipilih (1-8): ";
     cin >> choice;
 
@@ -151,6 +153,11 @@ int main() {
             cout << "Enter height of Tube: " << endl;
             cin >> height;
             volumetabung(radius, height);
+            break;
+
+        case 9:
+            cout << "Exiting the program." << endl;
+            running = false; // Exit the loop
             break;
 
         default:
