@@ -78,6 +78,7 @@ int main() {
     float radius, width, height, length, a, b, c;
     bool running = true; // Variable to control the loop
 
+  while (running) {
     cout << "Kalkulator penghitung keliling, luas, dan volume dari bangun di bawah" << endl;
     cout << "1. Circle" << endl;
     cout << "2. Rectangle" << endl;
@@ -88,7 +89,7 @@ int main() {
     cout << "7. Cuboid" << endl;
     cout << "8. Tube (Cylinder)" << endl;
     cout << "9. exit" << endl; 
-    cout << "Masukan nomor bangun yang akan dipilih (1-8): ";
+    cout << "Masukan nomor bangun yang akan dipilih (1-9): ";
     cin >> choice;
 
     switch (choice) {
@@ -164,6 +165,7 @@ int main() {
             cout << "Invalid choice!" << endl;
             break;
     }
-
+}
     return 0;
 }
+
